@@ -30,9 +30,9 @@ def stop_processes():
     os.write(sys.stdout.fileno(), b"All processes stopped.\n")
     sys.exit(0)
 
-def signal_handler(sig, frame):
-    shutdown_event.set()
-    stop_processes()
+# def signal_handler(sig, frame):
+#     shutdown_event.set()
+#     stop_processes()
 
 def wait_for_enter():
     try:
@@ -43,10 +43,10 @@ def wait_for_enter():
 
 if __name__ == "__main__":
     # Register signal handlers
-    signal.signal(signal.SIGINT, signal_handler)    # Ctrl+C
-    signal.signal(signal.SIGTERM, signal_handler)   # kill
-    if sys.platform != "win32":
-        signal.signal(signal.SIGHUP, signal_handler)
+    # signal.signal(signal.SIGINT, signal_handler)    # Ctrl+C
+    # signal.signal(signal.SIGTERM, signal_handler)   # kill
+    # if sys.platform != "win32":
+    #     signal.signal(signal.SIGHUP, signal_handler)
 
     print("\n" + "="*50)
     print("National Park Project Dummy")
