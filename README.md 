@@ -1,0 +1,28 @@
+# Nationalparkprojekt Dummy
+
+A full-stack data processing application with a FastAPI backend and Streamlit frontend for file upload, processing, and forecast visualization.
+
+## Installation
+
+1. Clone the repository or download the project files
+2. Prepare and activate Python Environment
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Running the Application
+
+The application consists of two components that need to be started separately:
+
+### Start the Backend (FastAPI)
+
+```bash
+uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000
+```
+
+### Start the Frontend (Streamlit)
+
+```bash
+streamlit run frontend/app.py
+```

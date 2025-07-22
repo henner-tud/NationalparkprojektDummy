@@ -1,0 +1,13 @@
+fastapi
+streamlit
+requests
+plotly
+uvicorn
+pyinstaller
+watchdog
+tornado
+altair
+toml
+typing-extensions
+packaging
+click
